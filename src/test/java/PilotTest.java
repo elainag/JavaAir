@@ -14,7 +14,6 @@ public class PilotTest {
     public void before(){
         pilot = new Pilot("Mary", "s12345", Rank.Captain);
     }
-
     @Test
     public void getPilotName(){
         assertEquals("Mary", pilot.getName());

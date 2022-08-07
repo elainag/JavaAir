@@ -1,4 +1,5 @@
 import Flight.Plane;
+import Flight.PlaneType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ public class PlaneTest {
 
     @Before
     public void before(){
-        plane = new Plane(5,200);
+        plane = new Plane(5,200, PlaneType.Concorde);
     }
     @Test
     public void canGetCapacity(){
@@ -19,6 +20,10 @@ public class PlaneTest {
     @Test
     public void canGetTotalWeight(){
         assertEquals(200, plane.getTotalWeight());
+    }
+    @Test
+    public void canGetPlaneType(){
+        assertEquals(PlaneType.Concorde, plane.canGetPlane());
     }
 
 }

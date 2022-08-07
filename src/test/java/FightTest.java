@@ -1,3 +1,4 @@
+import Flight.Plane;
 import Flight.Flight;
 import Person.CabinCrewMember;
 import Person.Passenger;
@@ -12,12 +13,14 @@ import static org.junit.Assert.assertEquals;
 public class FightTest {
 
     Flight flight;
+    Plane plane;
     CabinCrewMember cabinCrew1;
     CabinCrewMember cabinCrew2;
     CabinCrewMember cabinCrew3;
     Passenger passenger1;
     Passenger passenger2;
     Passenger passenger3;
+
 
 
     @Before
@@ -38,6 +41,10 @@ public class FightTest {
         passengers.add(passenger3);
         flight = new Flight("FN123", "Heathrow", "Edinburgh", "22:00" );
         }
+
+
+
+
 
     @Test
     public void canGetFlightNumber(){
