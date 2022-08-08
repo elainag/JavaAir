@@ -16,6 +16,8 @@ public class Flight {
     private ArrayList<CabinCrewMember> cabinCrew;
     private ArrayList<Passenger> passengers;
 
+    private PlaneType planeType;
+
     public Flight(String flightNumber, String destination, String departing, String departureTime
     ) {
         this.flightNumber = flightNumber;
@@ -24,6 +26,7 @@ public class Flight {
         this.departureTime = departureTime;
         this.cabinCrew = new ArrayList<>();
         this.passengers = new ArrayList<>();
+
     }
     public String getFlightNumber() {
         return flightNumber;
